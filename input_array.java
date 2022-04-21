@@ -9,7 +9,6 @@ public class input_array {
         int n = sc.nextInt();
         System.out.println("enter the array element: ");
 
-
         int arr[] = new int[n];
 
         for (i = 0; i < n; i++) {
