@@ -27,7 +27,7 @@ public class Constructor1 {
                              //Contructor from Class B is called
 
         A obj1=new A();    //Contructor from Class A is called
-
+ 
 
 
 
