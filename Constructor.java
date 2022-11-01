@@ -14,14 +14,18 @@ int a=5;
     }
 
 }
-class Constructor
+class Main
 {
 
     public static void main(String[] args) {
 
         A obj=new A();
-        A obj2=new A();
+        A obj2=new A(5);
 
 
     }
 }
+
+// o/p
+// constructor is called
+// 5
