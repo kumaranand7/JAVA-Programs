@@ -28,4 +28,4 @@ public class EncapTest {
     public void setIdNum( String newId) {
         idNum = newId;
     }
-}
+} 
