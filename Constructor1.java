@@ -9,7 +9,7 @@ class A
 
 }
 class B extends A{
-    B()
+    B() 
     {
         super();
         System.out.println("Contructor from Class B is called ");
