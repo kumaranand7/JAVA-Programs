@@ -3,7 +3,7 @@ package com.company;
 
 public class Runencp {
 
-    public static void main(String args[]) {
+    public static void main(String args[]) { 
         EncapTest encap = new EncapTest();
         encap.setName("James");
         encap.setAge(20);
