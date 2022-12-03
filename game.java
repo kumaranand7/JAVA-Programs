@@ -58,5 +58,5 @@ public class game
 
         }
         System.out.println("The number of Guesses/score= "+k);
-    }
+    } 
 }
