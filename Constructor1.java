@@ -2,7 +2,7 @@ package com.company;
 
 class A
 {
-    A()
+    A() 
     {
         System.out.println("Contructor from Class A is called ");
     }
