@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Celsius_to_Fahrenheit {
 
-
+ 
     static int clTof(int a)
     {
 
