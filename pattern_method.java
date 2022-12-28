@@ -38,5 +38,5 @@ public class pattern_method {
         int x=sc.nextInt();
         pattern(x);
     }
-
+ 
 }
