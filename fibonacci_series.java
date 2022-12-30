@@ -30,5 +30,5 @@ public class fibonacci_series {
 
         int result=fibonacci(x);
         System.out.println(result);
-    }c
+    }
 }

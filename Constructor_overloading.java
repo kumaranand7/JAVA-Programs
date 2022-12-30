@@ -1,4 +1,4 @@
- 
+
 
 class Student5{
     int id;
@@ -15,7 +15,9 @@ class Student5{
         name = n;
         age=a;
     }
-    void display(){System.out.println(id+" "+name+" "+age);}
+    void display(){
+        System.out.println(id+" "+name+" "+age);
+    }
 
     public static void main(String args[]){
         Student5 s1 = new Student5(121,"ANAND");

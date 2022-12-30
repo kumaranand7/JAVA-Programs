@@ -1,5 +1,5 @@
 package com.company;
-  // Java program to demonstrate working of split()
+
     public class split_function {
         public static void main(String args[])
         {

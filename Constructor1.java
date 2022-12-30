@@ -2,14 +2,14 @@ package com.company;
 
 class A
 {
-    A() 
+    A()
     {
         System.out.println("Contructor from Class A is called ");
     }
 
 }
 class B extends A{
-    B() 
+    B()
     {
         super();
         System.out.println("Contructor from Class B is called ");
@@ -27,10 +27,9 @@ public class Constructor1 {
                              //Contructor from Class B is called
 
         A obj1=new A();    //Contructor from Class A is called
- 
 
 
- 
-    } 
-} 
-  
+
+
+    }
+}
