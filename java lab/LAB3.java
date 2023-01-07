@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class labpro3 {
 	
 	int rno;
-	String rtype;
+	String rtype; 
 	boolean ac;
 	float area;
 	Scanner obj=new Scanner(System.in);
