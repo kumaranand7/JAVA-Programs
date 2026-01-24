@@ -1,4 +1,6 @@
-class Employee {
+package com.company;
+
+class Employeeee {
 
     private int id;
     private  String name;
@@ -19,7 +21,7 @@ class Employee {
 
 public  class acess_modifier2 {
     public static void main(String[] args) {
-        Employee emp1 = new Employee();
+        Employeeee emp1 = new Employeeee();
 
         emp1.setName("Anand");
         System.out.println(emp1.getName());

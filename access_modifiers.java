@@ -1,4 +1,6 @@
-class Employee {
+package com.company;
+
+class Employeee {
 
     public int id;
     public   String name;
@@ -7,7 +9,7 @@ class Employee {
 
 public  class access_modifiers {
     public static void main(String[] args) {
-        Employee emp1 = new Employee();
+        Employeee emp1 = new Employeee();
         emp1.id = 3;
         emp1.name = "Anand";
 
