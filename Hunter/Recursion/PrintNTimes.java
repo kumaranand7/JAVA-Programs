@@ -1,9 +1,7 @@
 package com.company.Hunter.Recursion;
 //print Hunter N times
-public class PrintNTimes {
-
-
-     void PrintHunter(int n, String Str){
+public  class PrintNTimes {
+    static void PrintHunter(int n, String Str){
 
          if (n==0){
 //           System.out.println("Hunter");
@@ -11,21 +9,14 @@ public class PrintNTimes {
          }
 
          PrintHunter(n-1, Str);
-         System.out.println(Str);
+         System.out.println(Str + n);
 
     }
-
-
-
-
     public static void main(String[] args) {
 
         int n=5;
         String str="Hunter";
-
-        PrintNTimes obj = new PrintNTimes();
-
-        obj.PrintHunter(n, str);
+        PrintHunter(n, str);
 
     }
 
