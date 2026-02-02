@@ -28,3 +28,7 @@ public class FreqCount {
        // System.out.println(map); //{2=3, 3=5, 5=2}
     }
 }
+
+//Time Complexity: O(N), where N is the number of elements in the array. Each element is processed once.
+//
+//Space Complexity: O(N), for storing frequencies of unique elements in the unordered_map.
