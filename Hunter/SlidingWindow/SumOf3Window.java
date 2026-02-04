@@ -19,8 +19,9 @@ public class SumOf3Window {
     }
     public static void main(String[] args) {
         int arr[]={ 2, 1, 5, 1, 3, 2};
-        int windowsize=3; //Brute force... what is k=4? then harcode value should be changes
-        //better appoch is using sliding window
+        //Fixed Size Window
+        int windowsize=3; //Brute force... what is k=4? then harcoded value should be changes
+        //better approch is using sliding window
 
 //        for(int i=0; i<= arr.length-windowsize; i++){
 //            int j=i+1;
