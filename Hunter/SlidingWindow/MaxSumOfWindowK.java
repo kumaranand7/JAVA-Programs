@@ -28,6 +28,5 @@ public class MaxSumOfWindowK {
         int arr[] ={2, 1, 5, 1, 3, 2};
         int k =3;
         maxSum(arr, k);
-
     }
 }
