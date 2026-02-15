@@ -33,6 +33,6 @@ public class LongestSubstring {
             maxLen = Math.max(maxLen, right - left + 1);
         }
 
-        System.out.println(maxLen); // Output: 3
+        System.out.println(maxLen); // Output:  3
     }
 }
