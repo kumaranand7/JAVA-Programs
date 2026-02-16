@@ -16,7 +16,7 @@ public class SelectionSortOptimised {
                 }
 
             }
-            if (  index != i) {
+            if (  index != i) { 
                 int temp = arr[index];
                 arr[index] = arr[i];
                 arr[i] = temp;
