@@ -23,7 +23,7 @@ public class SelectionSortOptimised {
             }
 
         }
-        //printing array elements
+        //printing array elements 
 
         for(int i=0; i<n; i++){
             System.out.print(arr[i]+ ", ");
