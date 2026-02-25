@@ -16,14 +16,14 @@ public class SelectionSortOptimised {
                 }
 
             }
-            if (  index != i) {
+            if (  index != i) { 
                 int temp = arr[index];
                 arr[index] = arr[i];
                 arr[i] = temp;
             }
 
         }
-        //printing array elements
+        //printing array elements 
 
         for(int i=0; i<n; i++){
             System.out.print(arr[i]+ ", ");

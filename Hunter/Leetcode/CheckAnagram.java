@@ -12,7 +12,7 @@ public class CheckAnagram {
         char [] Sh=s.toCharArray();
         char [] Th=t.toCharArray();
 
-        Arrays.sort(Sh);
+        Arrays.sort(Sh); 
         Arrays.sort(Th);
 
         return Arrays.equals(Sh,Th);
