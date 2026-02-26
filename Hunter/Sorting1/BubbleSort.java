@@ -6,7 +6,7 @@ public class BubbleSort {
         int arr[]={7,4,5,8,9,9,3,4};
         int n= arr.length;
         for(int i=0; i<n-1; i++){
-            for(int j=0; j<n-1; j++){ //  n-1-i; last sprted element skip in each pass
+            for(int j=0; j<n-1; j++){ //  n-1-i; last sorted element skip in each pass
                 if(arr[j]>arr[j+1]){
                     //swap
                     int tmp= arr[j];

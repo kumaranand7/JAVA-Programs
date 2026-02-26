@@ -16,7 +16,6 @@ public class SelectionSort {
 
         }
         }
-
         for(int element :arr){
         System.out.println(element);
 

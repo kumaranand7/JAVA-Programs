@@ -23,5 +23,6 @@ public class CheckAnagram {
         CheckAnagram obj = new CheckAnagram();
         Boolean res=obj.isAnagram( s, t);
         System.out.println(res);
+
     }
 }
