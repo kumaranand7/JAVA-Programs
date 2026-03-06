@@ -18,9 +18,10 @@ public class SortedRotated {
             }
         }
 
-        // If the order breaks more than once,
+        // If the order breaks more than once,,
         // the array cannot be sorted and rotated
         // Valid cases: 0 or 1 break
         return count <= 1 ;
+
     }
 }
