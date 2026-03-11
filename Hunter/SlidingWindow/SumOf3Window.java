@@ -29,7 +29,6 @@ public class SumOf3Window {
 //            int sum =arr[i]+arr[j]+arr[k];
 //            System.out.println(sum);
 //        }
-
         SumOfKSlinding(arr, windowsize);
     }
 
