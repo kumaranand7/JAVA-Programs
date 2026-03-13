@@ -25,7 +25,7 @@ public class FreqCount {
         for (HashMap.Entry <Integer,Integer> entry: map.entrySet() ){
             System.out.println(entry.getKey()+ "-->"+ entry.getValue());
         }
-       // System.out.println(map); //{2=3, 3=5, 5=2}
+       //  System.out.println(map); //{2=3, 3=5, 5=2}
     }
 }
 
