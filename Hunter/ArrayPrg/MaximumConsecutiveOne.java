@@ -19,7 +19,7 @@ public class MaximumConsecutiveOne {
             }
         }
 
-        max = Math.max(max, count);
+        max = Math.max(max, count); // To update max: required in case when there is no zero {1, 1, 1, 1};
 
         System.out.println(max);
 
