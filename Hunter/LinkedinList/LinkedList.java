@@ -27,6 +27,18 @@ public class LinkedList {
         curr.next = newNode;
     }
 
+
+    //inset at head
+
+    void insetAtHead(int data){  //array o(n) //LL o(n)
+
+        Node newNode = new Node(data); //Step 1: naya node banao
+
+        Node headnode= head;
+        newNode.next=head;    // Step 2: naye node ka next purane head se jodo
+        head=newNode;   // Step 3: head ko naya node banao
+    }
+
     void printLinkedList() {
 
         // head se shuru karo
