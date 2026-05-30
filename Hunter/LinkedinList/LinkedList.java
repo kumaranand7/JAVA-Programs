@@ -30,13 +30,16 @@ public class LinkedList {
 
     //inset at head
 
-    void insetAtHead(int data){  //array o(n) //LL o(n)
+    void insertAtHead(int data) { // array O(n) // LL O(1)
 
-        Node newNode = new Node(data); //Step 1: naya node banao
+        // Step 1: naya node banao
+        Node newNode = new Node(data);
 
-        Node headnode= head;
-        newNode.next=head;    // Step 2: naye node ka next purane head se jodo
-        head=newNode;   // Step 3: head ko naya node banao
+        // Step 2: naye node ka next purane head se jodo
+        newNode.next = head;
+
+        // Step 3: head ko naya node banao
+        head = newNode;
     }
 
     void printLinkedList() {
@@ -52,5 +55,14 @@ public class LinkedList {
 
         // list ka end
         System.out.println("null");
+    }
+
+    void deleteAtHead(){
+        if(head==null){  //agar list empty hai
+            System.out.println("List is empty");
+            return;
+        }
+       head=head.next; //head ke next ko head bna do
+
     }
 }

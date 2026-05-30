@@ -10,11 +10,16 @@ public class Main {
         list.insertAtEnd(15);
         list.insertAtEnd(99);
 
-        list.printLinkedList();
+        list.printLinkedList(); //5==> 10==> 15==> 99==> null
 
         //INSERT at HEAD
-        list.insetAtHead(1);
-        list.printLinkedList();
+        //INSERT at HEAD
+        list.insertAtHead(1);
+        list.printLinkedList(); //1==> 5==> 10==> 15==> 99==> null
+
+        //delete at head
+        list.deleteAtHead();
+        list.printLinkedList();//5==> 10==> 15==> 99==> null
 
     }
 }
