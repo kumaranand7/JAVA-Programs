@@ -65,4 +65,83 @@ public class LinkedList {
        head=head.next; //head ke next ko head bna do
 
     }
+
+
+    void deleteNode(int data) {
+        // Step 1: khali list check
+
+        if(head==null){  //agar list empty hai
+            System.out.println("List is empty");
+            return;
+        }
+        // Step 2: agar head ka data delete karna ho (head node me hi data ho)
+
+        if (head.data==data){
+            head=head.next;
+            return;
+        }
+
+        // Step 3: loop - curr.next.data != data tak chalo
+        Node curr = head;
+        while(curr.next != null &&  curr.next.data!=data){    //also check if
+            curr=curr.next;
+        }
+
+        if (curr.next == null) {
+            System.out.println("Data not found!");
+            return;
+        }
+
+        // Step 4: curr.next = curr.next.next
+        curr.next= curr.next.next;
+    }
+
+
+
+    int linkedListLength() {
+
+        // agar list khali hai toh length 0
+        if (head == null) {
+            return 0;
+        }
+
+        // curr se traverse shuru karo
+        Node curr = head;
+        int count = 1;
+
+        // jab tak last node na aaye
+        while (curr.next != null) {
+            curr = curr.next; // agle node par jao
+            count++;          // count badhao
+        }
+
+        // poori list ki length return karo
+        return count;
+    }
+
+    boolean isElementPresent(int element) {
+
+        // agar list khali hai toh element ho hi nahi sakta
+        if (head == null) {
+            return false;
+        }
+
+        // head se traverse shuru karo
+        Node curr = head;
+
+        while (curr != null) {
+
+            // agar element mil gaya
+            if (curr.data == element) {
+                return true;
+            }
+
+            // agle node par jao
+            curr = curr.next;
+        }
+
+        // element nahi mila
+        return false;
+    }
+
 }

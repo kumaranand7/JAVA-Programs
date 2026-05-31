@@ -21,5 +21,16 @@ public class Main {
         list.deleteAtHead();
         list.printLinkedList();//5==> 10==> 15==> 99==> null
 
+        //remove node 10
+        list.deleteNode(10);
+        list.printLinkedList();  //5==> 15==> 99==> null
+
+        //length of the list
+        int length= list.linkedListLength();
+        System.out.println(length); //3
+
+        //search element
+        System.out.println(list.isElementPresent(5));
+
     }
 }
