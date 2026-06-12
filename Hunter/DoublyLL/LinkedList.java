@@ -40,4 +40,38 @@ public class LinkedList {
         }
         System.out.println("null");
     }
+
+
+    public void deleteHead() {
+
+        // agar list khali hai toh delete nahi kar sakte
+        if (head == null) {
+            System.out.println("list is empty");
+            return;
+        }
+
+        //next node ko head bna do
+        head = head.next;
+
+        // head ka pre null kr do
+        head.pre = null;
+    }
+
+    public void deleteLastNode() {
+
+        // agar list khali hai toh delete nahi kar sakte
+        if (head == null) {
+            System.out.println("list is empty");
+            return;
+        }
+
+        // last node tak pahuncho
+        Node curr = head;
+        while (curr.next != null) {
+            curr = curr.next; // agle node par jao
+        }
+
+        // last node ke pehle wale node ka next null karo
+        curr.pre.next = null;
+    }
 }

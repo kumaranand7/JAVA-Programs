@@ -18,8 +18,14 @@ public class Main {
         l1.insertAtHead(20);
         l1.insertAtHead(30);
         l1.insertAtHead(40);
-
         l1.printList();
+
+        l1.deleteHead();
+        l1.printList();
+
+        l1.deleteLastNode();
+        l1.printList();
+
 
     }
 }
