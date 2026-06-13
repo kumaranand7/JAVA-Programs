@@ -74,4 +74,38 @@ public class LinkedList {
         // last node ke pehle wale node ka next null karo
         curr.pre.next = null;
     }
+
+
+    void reverseDoublyLL() {
+
+        // agar list khali hai toh reverse nahi kar sakte
+        if (head == null) {
+            System.out.println("list is empty");
+            return;
+        }
+
+        Node curr = head;
+        Node tmp;
+        Node lastNode = null; // loop ke baad naya head yahi hoga
+
+        while (curr != null) {
+
+            // agle node ko save karo — swap ke baad kho jaayega
+            tmp = curr.next;
+
+            // next aur pre swap karo
+            curr.next = curr.pre; // next ab peeche point karega
+            curr.pre = tmp;       // pre ab aage point karega
+
+            // curr ko save karo — yahi naya head banega
+            lastNode = curr;
+
+            // swap ke baad aage badhne ke liye curr.pre use karo
+            // kyunki swap ke baad pre hi naya next hai
+            curr = curr.pre;
+        }
+
+        // lastNode = sabse aakhri node jahan curr tha = naya head
+        head = lastNode;
+    }
 }

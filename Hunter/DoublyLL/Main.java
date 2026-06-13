@@ -26,6 +26,9 @@ public class Main {
         l1.deleteLastNode();
         l1.printList();
 
+        l1.reverseDoublyLL();
+        l1.printList();
+
 
     }
 }
