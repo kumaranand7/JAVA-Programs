@@ -1,5 +1,7 @@
 package com.company.Hunter.DoublyLL;
 
+import java.util.Stack;
+
 public class LinkedList {
 
     // pehla node — yahi se poori list shuru hoti hai
@@ -107,5 +109,42 @@ public class LinkedList {
 
         // lastNode = sabse aakhri node jahan curr tha = naya head
         head = lastNode;
+
+        //    Time: O(n)
+        //    Space: O(1)
     }
+
+
+    void reverseUsingStack() {
+
+        //    Step 1: Stack mein saare data daalo
+        //    Step 2: tmp = head reset karo
+        //    Step 3:Stack se nikalo aur data replace karo
+
+
+
+        // stack banao — LIFO principle follow karega
+        Stack<Integer> s1 = new Stack<>();
+
+        // Step 1: saare nodes ka data stack mein daalo
+        Node tmp = head;
+        while (tmp != null) {
+            s1.push(tmp.data);
+            tmp = tmp.next;
+        }
+
+        // tmp wapas head par le aao
+        // kyunki pehle loop ke baad tmp = null ho gaya tha
+        tmp = head;
+
+        // Step 2: stack se nikalo aur list mein daalo
+        while (tmp != null) {
+            tmp.data = s1.pop();
+            tmp = tmp.next;
+        }
+
+    }
+
+//    Time: O(n) 
+//    Space: O(n)
 }

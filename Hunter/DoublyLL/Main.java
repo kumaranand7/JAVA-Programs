@@ -18,15 +18,21 @@ public class Main {
         l1.insertAtHead(20);
         l1.insertAtHead(30);
         l1.insertAtHead(40);
-        l1.printList();
+        l1.insertAtHead(50);
+        l1.insertAtHead(60);
+
+        l1.printList(); //60==>50==>40==>30==>20==>10==>null
 
         l1.deleteHead();
-        l1.printList();
+        l1.printList(); //50==>40==>30==>20==>10==>null
 
         l1.deleteLastNode();
-        l1.printList();
+        l1.printList(); //50==>40==>30==>20==>null
 
         l1.reverseDoublyLL();
+        l1.printList();  //20==>30==>40==>50==>null
+
+        l1.reverseUsingStack();
         l1.printList();
 
 
