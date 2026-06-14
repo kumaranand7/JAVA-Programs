@@ -20,7 +20,7 @@ class Constructor
     public static void main(String[] args) {
 
         A obj=new A();
-        A obj2=new A();
+        A obj2=new A(2);
 
 
     }
