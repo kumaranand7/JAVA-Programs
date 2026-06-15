@@ -3,7 +3,7 @@ package com.company;
 public class javaException {
     public static void main(String[] args) {
 
-        int a=90,b=2,c;
+        int a=90,b=0,c;
         try {
             c = a / b;
             System.out.println(c);

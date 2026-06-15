@@ -21,7 +21,7 @@ public class pattern {
         {
             for (j = i; j >= 1; j--)
             {
-                System.out.printf("*");
+                System.out.print("*");
             }
             System.out.println("\n");
         }
