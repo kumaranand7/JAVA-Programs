@@ -2,7 +2,7 @@ package com.company;
 public class PWarray
 {
     public static void main(String[] args) {
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         int i;
         int arr[] = {2, 345, 45, 23, 3, 4};
         for ( i = 0; i < arr.length; i++)

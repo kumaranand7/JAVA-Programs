@@ -16,6 +16,14 @@ class ArrCount
         System.out.println(c+"\n");
 
     }
+
+
+    void printArray(int arr[]){
+        for(int element: arr){
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
 }
 
 public class Pw_ArraysAdvance {
@@ -29,9 +37,11 @@ public class Pw_ArraysAdvance {
         ArrCount obj=new ArrCount();
         obj.ArrayCount(arr1);
 
-        int []arr3=arr2.clone();  // deep copy
-        int []arr4=arr2;  // shallow copy
+        int []arr3=arr2.clone();   // Deep copy for primitive arrays   [creates a new array and copies the values.]
+        int []arr4=arr2;   // Shallow copy (same array reference)  [if i change any one array it will affect another array]
 
+        obj.printArray(arr3);
+        obj.printArray(arr4);
 
 
     }
